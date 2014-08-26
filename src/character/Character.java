@@ -11,6 +11,9 @@ import entity.*;
  */
 public abstract class Character extends Entity implements Updateable
 {
+	/**
+	 * Draws this drawable instance
+	 */
 	public void draw(Graphics graphics) 
 	{
 		
