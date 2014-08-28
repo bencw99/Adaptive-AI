@@ -1,8 +1,21 @@
 package world.platform;
 
+import java.awt.Graphics;
+
 import entity.*;
 
-public abstract class Platform extends Entity
+/**
+ * A class representing a platform
+ * 
+ * @author Benjamin Cohen-Wang
+ */
+public class Platform extends Inactive
 {
-
+	/**
+	 * Draws this drawable instance
+	 */
+	public void draw(Graphics graphics) 
+	{
+		
+	}
 }
