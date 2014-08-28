@@ -43,6 +43,27 @@ public class Position
 		return new Position(this.x + x, this.y + y);
 	}
 	
+	/** Returns a translated instance of this position
+	 * 
+	 * @param vector	the vector this position is translated by
+	 * @return a version of this instance translated by given vector
+	 */
+	public Position translate(Vector vector)
+	{
+		return translate(vector.getX(), vector.getY());
+	}
+	
+	/** Updates this instance
+	 * 
+	 * @param vector	the vector this position is translated by
+	 * @param updateTime	the time since the last update
+	 */
+	public void update(Vector vector, double updateTime)
+	{
+		x = vector.getX()*updateTime;
+		y = vector.getY()*updateTime;
+	}
+	
 	/**
 	 * @return x-coordinate of instance
 	 */
