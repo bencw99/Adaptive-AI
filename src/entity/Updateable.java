@@ -9,6 +9,8 @@ public interface Updateable
 {
 	/**
 	 * Updates this updateable instance
+	 * 
+	 * @param updateTime	the time since last instance
 	 */
-	public abstract void update();
+	public abstract void update(double updateTime);
 }
