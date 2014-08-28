@@ -15,4 +15,24 @@ public abstract class Entity implements Drawable
 	
 	/** The position of this entity **/
 	private Position position;
+
+	public World getWorld() 
+	{
+		return world;
+	}
+
+	public Position getPosition() 
+	{
+		return position;
+	}
+
+	public void setWorld(World world) 
+	{
+		this.world = world;
+	}
+
+	public void setPosition(Position position) 
+	{
+		this.position = position;
+	}
 }
